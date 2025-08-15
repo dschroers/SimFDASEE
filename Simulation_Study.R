@@ -45,3 +45,4 @@ for (scen_name in names(simulation_results)) {
             row.names = FALSE)
   cat("Saved results for scenario:", scen_name, "->", file_path, "\n")
 }
+
