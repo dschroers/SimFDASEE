@@ -1,0 +1,49 @@
+# SimFDASEE
+
+## Description
+
+This repository contains the code for the simulation study presented in the article ["Robust Functional Data Analysis for Stochastic Evolution Equations"](https://arxiv.org/abs/2401.16286) by Dennis Schroers.
+
+The simulation study compares the finite-sample performance of the truncated covariation estimator for adjusted increments and nonadjusted increments in the context of a first order stochastic PDE.
+
+---
+  
+## Main Files
+
+- `Simulation_Study.R`: Main R script for replicating the simulation study.
+- `results/simulation_results_exponential.csv`: Output of the simulation study using the exponential kernel.
+- `results/simulation_results_gaussian.csv`: Output of the simulation study using the Gaussian kernel.
+
+## Installation
+  
+To use the package, install the development version with devtools:
+
+  
+  ```r
+# Install devtools if needed
+install.packages("devtools")
+
+
+# Install the package from GitHub
+devtools::install_github("yourusername/SimFDASEE")
+```  
+
+## Usage Example
+
+```r
+library(SimFDASEE)
+
+# Run a small simulation
+res <- run_mc_simulation(
+  K = 10, 
+  nx = 101, 
+  nt = 101, 
+  kernel = function(h) exp(-abs(h))
+)
+
+# View results
+print(res$results)
+```
+
+
+
