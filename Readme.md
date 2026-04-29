@@ -14,12 +14,12 @@ increments in the context of a first order stochastic PDE.
 
 ## Main Files
 
--   `Simulation_Study.R`: Main R script for replicating the simulation
-    study.
--   `results/simulation_results_exponential.csv`: Output of the
-    simulation study using the exponential kernel.
--   `results/simulation_results_gaussian.csv`: Output of the simulation
-    study using the Gaussian kernel.
+- `Simulation_Study_ad_hoc_trunc.R`: Main R script for replicating the simulation study with ad-hoc chosen levels of truncation.
+- `Simulation_Study_rank_based.R`: Main R script for replicating the simulation study with truncation based on a data-driven rule.
+- `results/simulation_results_conserv_exponential.csv`: Output of the simulation study using the exponential kernel and ad-hoc truncation.
+- `results/simulation_results_exponential.csv`: Output of the simulation study using the exponential kernel and data-driven truncation.
+- `results/simulation_results_conserv_gaussian.csv`: Output of the simulation study using the Gaussian kernel and ad-hoc truncation.
+- `results/simulation_results_gaussian.csv`: Output of the simulation study using the Gaussian kernel and data-driven truncation.
 
 ## Installation
 
